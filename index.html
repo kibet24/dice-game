@@ -1,38 +1,57 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="css/styles.css" type="text/css">
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    </head>
-    <body>
-        <div class="container">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <center><h2 class="panel-title">Pig Dice Game</h2></center>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pig Dice Game</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <center><h2>Pig Dice Game</h2></center>
+        </div>
+        <!--The upper part holding the users names and the game story-->
+        <div class="panel-body">
+          <div class="row" id="play">
+            <div class="col-md-3">
+              <form class="form-group" action="index.html" method="post">
+                <label>Player 1 Name.</label><br>
+                <input type="text" id="player1"name="" value="">
+              </form>
+              <button type="button" name="button">Submit</button>
             </div>
-            <div id="user">
-                 <div class="row">
-                   <div class="col-md-3">
-                    <form class="player1" action="index.html" method="post">
-                      <label for="player1">Player 1</label><br>
-                      <p>Input your full name.</p><br>
-                      <input type="text" name="" id="player1" value="">
-                    </form>
-                    <button type="button" id="submit1" name="button">Submit</button>
-                   </div>
-                   <div class="col-md-6">
-                      JHFJADSDJFHDFVBXCKDCJBDSBCSDCANCKBKXBDKLh
-                   </div>
-                   <div class="col-md-3">
-                   <form class="player2" action="index.html" method="post">
-                      <label for="player2">Player 2.</label><br>
-                      <p>Input your full name.</p><br>
-                      <input type="text" name="player2" id="player2" value="">
-                    </form>
-                      <button type="button" id="submit2"name="button">Submit</button>
-                   </div>
-                 </div>
+            <div class="col-md-6" id="about">
+              <h3> <u>Welcome!!</u> </h3>
+              <label><u>About Pig Dice Game.</u> </label>
+
+            </div>
+            <div class="col-md-3">
+              <form class="form-group" action="index.html" method="post">
+                <label>Player 2 Name.</label><br>
+                <input type="text" name="" value="">
+              </form>
+              <button type="button" name="button">Submit</button>
+            </div>
+          </div>
+          <!--Part holding the lower row with the scores.. etc -->
+          <div class="row" id="play">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-3">
+
             </div>
           </div>
         </div>
-    </body>
+        <div class="panel-footer">
+
+        </div>
+      </div>
+    </div>
+
+  </body>
 </html>
