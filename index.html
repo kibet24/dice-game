@@ -14,36 +14,44 @@
         <!--The upper part holding the users names and the game story-->
         <div class="panel-body">
           <div class="row" id="play">
-            <div class="col-md-3">
-              <form class="form-group" action="index.html" method="post">
+            <div class="col-md-2">
+              <form class="form-group" action="index.html" id="player1-name">
                 <label>Player 1 Name.</label><br>
-                <input type="text" id="player1"name="" value="">
+                <input type="text" id="player1" name="player1" placeholder="player1" class="form-control" value="">
               </form>
-              <button type="button" name="button">Submit</button>
+              <button type="submit" class="btn-submit btn btn-success">Submit</button>
             </div>
-            <div class="col-md-6" id="about">
+            <div class="col-md-8" id="about">
               <h3> <u>Welcome!!</u> </h3>
-              <label><u>About Pig Dice Game.</u> </label>
+              <label>Rules of The Game.</label>
+
+                <p>1. Each turn, a player rolls a die until either a 1 is rolled, the player decides to "hold"</p>
+                <p>2. If the player rolls a 1, they score nothing and it becomes the next player's turn.</p>
+                <p>3. If the player rolls any other number, it is added to their turn total and the player's turn continues.</p>
+                <p>4. If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</p>
 
             </div>
-            <div class="col-md-3">
+            <div class="col-md-2">
               <form class="form-group" action="index.html" method="post">
                 <label>Player 2 Name.</label><br>
-                <input type="text" name="" value="">
+                <input type="text" name="player2" id="player2" class="form-control" placeholder="player2" value="">
               </form>
-              <button type="button" name="button">Submit</button>
+              <button type="submit" name="button" class="btn-submit btn btn-success">Submit</button>
             </div>
           </div>
+          <hr><hr>
           <!--Part holding the lower row with the scores.. etc -->
           <div class="row" id="play">
-            <div class="col-md-3">
+            <div class="col-md-4">
+              <div class="firstPlayer">
 
+              </div>
             </div>
-            <div class="col-md-3">
-
+            <div class="col-md-4">
+              <button type="button" class="btn btn-success" name="button">Roll.</button><br>
+              <button type="button" class="btn btn-warning" name="button">Hold.</button>
             </div>
-            <div class="col-md-3">
-
+            <div class="col-md-4">
             </div>
           </div>
         </div>
@@ -52,6 +60,9 @@
         </div>
       </div>
     </div>
+    <script src="js/main.js">
+
+    </script>
 
   </body>
 </html>
