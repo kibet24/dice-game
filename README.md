@@ -1,4 +1,4 @@
-## Author.By
+## Author.
 [Amos Kibet](https://github.com/kibet24)
 
 ## Project Name

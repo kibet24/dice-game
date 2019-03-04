@@ -21,7 +21,7 @@
               </form>
               <button type="submit" class="btn-submit btn btn-success">Submit</button>
             </div>
-            <div class="col-md-8" id="about">
+            <div class="col-md-8 well" id="about">
               <h3> <u>Welcome!!</u> </h3>
               <label>Rules of The Game.</label>
 
@@ -44,25 +44,42 @@
           <div class="row" id="play">
             <div class="col-md-4">
               <div class="firstPlayer">
+                <div class="col-md-2">
+                  <div class="dice" id="die1">
+
+                  </div>
+                  <button type="button" onclick="roll()" class="btn btn-success" name="button">Roll.</button>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" onclick="hold()" class="btn btn-warning" name="button">Hold.</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="status">
 
               </div>
             </div>
             <div class="col-md-4">
-              <button type="button" class="btn btn-success" name="button">Roll.</button><br>
-              <button type="button" class="btn btn-warning" name="button">Hold.</button>
-            </div>
-            <div class="col-md-4">
+              <div class="col-md-2">
+                <div class="dice" id="die2">
+
+                </div>
+                <button type="button" onclick="roll()" class="btn btn-success" name="button">Roll.</button>
+              </div>
+              <div class="col-md-2">
+                <button type="button" onclick="hold()" class="btn btn-warning" name="button">Hold.</button>
+              </div>
             </div>
           </div>
         </div>
         <div class="panel-footer">
-
+          Pig Dice Game.  kibet24   email : quibetamos@gmail.com
         </div>
       </div>
     </div>
-    <script src="js/main.js">
+    <script src="js/main.js"></script>
 
-    </script>
 
   </body>
 </html>
