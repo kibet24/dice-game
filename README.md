@@ -1,5 +1,4 @@
-## Author.
-Amos Kibet
+## Author.By [Amos Kibet](https://github.com/kibet24)
 
 ## Project Name
 Pig Dice Game
