@@ -4,8 +4,6 @@ var scores, currentScore, currentPlayer;
 var player = [];
 var rollBtn = $("#roll");
 var holdBtn = $("#hold");
-var letsPlay = $("#play");
-
 
 function roll() {
   var die = Math.floor(Math.random() * 6) + 1;
@@ -41,15 +39,15 @@ $(document).ready(function() {
   holdBtn.click(hold);
   newGame.click(init);
 
-  $("#gamers").submit(function(fn) {
-    player[0] = $("#gamer1").val();
-    player[1] = $("#gamer2").val();
+  $("players").submit(function(fn) {
+    player[0] = $("#player1").val();
+    player[1] = $("player2").val();
     $("#p1").text(player[0].toUpperCase());
     $("#p2").text(player[1].toUpperCase());
-    if ($("#gamer1").val() === "" || $("#gamer2").val() === "") {
-      alert("Please Enter both players names to continue!!!");
+    if ($("#player1").val() === "" || $("player2").val() === "") {
+      alert("Sign in first.");
     } else {
-      $("#gamers").hide();
+      $("Players").hide();
       $("#game").addClass("slide-active");
     }
     fn.preventDefault();
