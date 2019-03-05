@@ -25,7 +25,7 @@ https://kibet24.github.io/dice-game/
  HTML
  CSS
  Bootstrap
- JQuery- objects and prototypes.
+ JQuery
 
 ## Copyright and license.
 Copyright (c) 2019 Amos Kibet.
