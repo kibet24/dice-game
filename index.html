@@ -1,70 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pig Dice Game</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <center><h2>Pig Dice Game</h2></center>
+        </div>
+        <!--The upper part holding the users names and the game story-->
+        <div class="panel-body">
+          <div class="row" id="play">
+            <div class="col-md-2">
+              <form class="form-group" action="index.html" id="player1-name">
+                <label>Player 1 Name.</label><br>
+                <input type="text" id="player1" name="player1" placeholder="player1" class="form-control" value="">
+              </form>
+              <button type="submit" class="btn-submit btn btn-success">Submit</button>
+            </div>
+            <div class="col-md-8 well" id="about">
+              <h3> <u>Welcome!!</u> </h3>
+              <label>Rules of The Game.</label>
 
-<head>
- <meta charset="utf-8" />
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <title>Pig Dice</title>
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <link href="https://fonts.googleapis.com/css?family=B612|Quicksand|Raleway|Roboto" rel="stylesheet">
- <link href="css/styles.css" rel="stylesheet" type="text/css">
- <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+                <p>1. Each turn, a player rolls a die until either a 1 is rolled, the player decides to "hold"</p>
+                <p>2. If the player rolls a 1, they score nothing and it becomes the next player's turn.</p>
+                <p>3. If the player rolls any other number, it is added to their turn total and the player's turn continues.</p>
+                <p>4. If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</p>
 
- <div id="mySidenav" class="sidenav">
- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
- <a href="#rules">How To Play</a>
- <a href="#gamers">Play Game</a>
- </div>
-</head>
+            </div>
+            <div class="col-md-2">
+              <form class="form-group" action="index.html" method="post">
+                <label>Player 2 Name.</label><br>
+                <input type="text" name="player2" id="player2" class="form-control" placeholder="player2" value="">
+              </form>
+              <button type="submit" name="button" class="btn-submit btn btn-success">Submit</button>
+            </div>
+          </div>
+          <hr><hr>
+          <!--Part holding the lower row with the scores.. etc -->
+          <div class="row" id="play">
+            <div class="col-md-4">
+              <div class="firstPlayer">
+                <div class="col-md-2">
+                  <div class="dice" id="die1">
 
-<body>
- <div id="container">
- <h1>Pig Dice Game</h1>
- <div id="rules" class="well">
- <div class="well">
- <form id="gamers">
- <h1>Enter Players Names</h1>
- <div class="form-group">
- <label for="player1">Player 1</label>
- <input class="form-control" type="text" id="player1">
- </div>
- <div class="form-group">
- <label for="player2">Player 2</label>
- <input class="form-control" type="text" id="player2">
- </div>
- <button class="btn btn-default" type="submit" form="players1" id="player1">OK</button>
- </form>
- </div>
- </div>
- <div id="game" class="row slide text-center">
- <div class="col-md-5">
- <div class="panel panel-default active-0">
- <div class="panel-body">
- <h1 class="player-name" id="p1"></h1>
- <span class="score" id="score0"></span>
- <div class="scoreboard">
- <h4>Scores:</h4><span class="current" id="current0"></span>
- </div>
- </div>
- </div>
- </div>
- <div class="col-md-2">
- <div id="rollDice"></div>
- <div class="button-group">
- <button id="roll" class="btn btn-default">Roll</button>
- <button id="hold" class="btn btn-default">Hold</button>
- </div>
- </div>
- <div class="col-md-5">
- <div class="panel panel-default">
- <div class="panel-body">
- <h1 class="player-name" id="p2"></h1>
- <span class="score" id="score1"></span>
- <div class="scoreboard">
- <h4>Current Score:</h4><span class="current" id="current1"></span>
- </div>
- </div>
- <script src="js/main.js"></script>
- <script src="js/jQuery.js"></script>
-</body>
+                  </div>
+                  <button type="button" onclick="roll()" class="btn btn-success" name="button">Roll.</button>
+                </div>
+                <div class="col-md-2">
+                  <button type="button" onclick="hold()" class="btn btn-warning" name="button">Hold.</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="status">
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="col-md-2">
+                <div class="dice" id="die2">
+
+                </div>
+                <button type="button" onclick="roll()" class="btn btn-success" name="button">Roll.</button>
+              </div>
+              <div class="col-md-2">
+                <button type="button" onclick="hold()" class="btn btn-warning" name="button">Hold.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel-footer">
+          Pig Dice Game.  kibet24   email : quibetamos@gmail.com
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+
+
+  </body>
 </html>
