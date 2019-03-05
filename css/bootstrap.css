@@ -3468,13 +3468,18 @@ fieldset[disabled] .btn-link:focus {
   display: block;
   width: 100%;
 }
+}
 .btn-block + .btn-block {
   margin-top: 5px;
 }
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
-  width: 100%;
+  width: 100
+
+}
+.die2{
+  background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F810fXoqLSHL._SX466_.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.com%2FLot-200-Translucent-Dice-available%2Fdp%2FB00ODX91NW&docid=MMzSSapxcJg5bM&tbnid=2BisXjoGuur1qM%3A&vet=10ahUKEwikitqm6-rgAhULzhoKHWcTC5sQMwhBKAMwAw..i&w=466&h=350&bih=669&biw=1366&q=translucent%20dice%20images&ved=0ahUKEwikitqm6-rgAhULzhoKHWcTC5sQMwhBKAMwAw&iact=mrc&uact=8);
 }
 .fade {
   opacity: 0;
