@@ -22,10 +22,10 @@ https://kibet24.github.io/dice-game/
 
 
 ## Technologies used
- HTML
- CSS
- Bootstrap
- JQuery
+* HTML
+* CSS
+* Bootstrap
+* JQuery
 
 ## Copyright and license.
 Copyright (c) 2019 Amos Kibet.
